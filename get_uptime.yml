@@ -1,0 +1,9 @@
+#获取系统在线时间和当前日期时间
+###
+---
+- hosts: all
+  tasks:
+    - name: get uptime
+      command: uptime
+    - name: get date
+      command: date
